@@ -1,0 +1,25 @@
+body{
+    margin: 0%;
+    width: auto;
+}
+header{
+    background-color: burlywood;
+    height: 100px;
+    margin-top: 0%;
+}
+nav{
+    background-color: rgb(86, 50, 3);
+    height: 50px;
+}
+main section{
+    background-color: rgb(6, 3, 86);
+    height: 400px;
+}
+footer{
+    background-color: rgb(58, 4, 9);
+    height: 150px;
+}
+.inHeader h2{
+    padding-top: 5px;
+    font-size: larger;
+}
