@@ -5,19 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
     <title>SJU Hostel</title>
 </head>
 <body>
-    <header class="inHeader">
-        <h2>ST. JOSEPH'S GENTS HOSTEL</h2>
-        <p>This is the place where boys become men:)</p>
-    </header>
-    <nav></nav>
-    <main>
-        <section class="slideshow">
-            HEHE
-        </section>
-    </main>
-    <footer></footer>
+    <section class="head">
+        <div class="container flex1">
+          <div class="scoial">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+          <div class="logo">
+            <img src="Images\logo_new.png" alt="">
+          </div>
+          <div class="address">
+            <i class="fas fa-map-marker-alt"></i>
+            <span> 36, Langford Rd, Langford Gardens, Bengaluru, Karnataka</span>
+          </div>
+        </div>
+      </section>
+      <header class="header">
+        <div class="container">
+          <nav class="navbar flex1">
+            <div class="sticky_logo logo">
+              <img src="image/logo.png" alt="">
+            </div>
+            <ul class="nav-menu">
+              <li> <a href="#home">Home</a> </li>
+              <li> <a href="#about">about</a> </li>
+              <li> <a href="#room">room</a> </li>
+              <li> <a href="#services">services</a> </li>
+              <li> <a href="#shop">shop</a> </li>
+              <li> <a href="#testimonials">testimonials</a></li>
+              <li> <a href="#gallary">gallary</a> </li>
+              <li> <a href="#blog">blog</a> </li>
+              <li> <a href="#contact">contact</a> </li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+    
+            <div class="head_contact">
+              <i class="fas fa-phone-volume"></i>
+              <span>080 2227 4079</span>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+    
+        hamburger.addEventListener("click", mobliemmenu);
+    
+        function mobliemmenu() {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        }
+    
+        window.addEventListener("scroll", function() {
+          var header = document.querySelector("header");
+          header.classList.toggle("sticky", window.scrollY > 0)
+        })
+      </script>
 </body>
 </html>
