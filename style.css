@@ -47,7 +47,7 @@ a {
     line-height: 30px;
     background: #FAF3E7;
     text-align: center;
-    color: #CC8C18;
+    color: #AC3B61;
   }
   
   .head img {
@@ -55,7 +55,8 @@ a {
   }
 /* Header */
 header {
-    background: #CC8C18;
+    margin-top: 48px;
+    background: #AC3B61;
     padding: 15px 0 15px 0;
     color: white;
   }
@@ -117,7 +118,7 @@ header {
     line-height: 80px;
     text-align: center;
     background: white;
-    color: #CC8C18;
+    color: #AC3B61;
     border-radius: 50%;
     transform: rotate(-45deg);
     border: 5px solid #ECE3D2;
@@ -126,20 +127,22 @@ header {
   
   header .sticky_logo {
     display: none;
+    margin-top: 0pz;
   }
   
   header.sticky .sticky_logo {
     display: block;
     width: 50px;
     height: 50px;
-    margin-top: -10px;
+    margin-top: -65px;
   }
   
   header.sticky {
+    margin-top: 0px;
     z-index: 9999;
     position: fixed;
     width: 100%;
-    background: #313538;
+    background: #AC3B61;
     transition: 0.5s;
     height: 12vh;
     transition: 0.5s;
@@ -149,6 +152,9 @@ header {
   
   header.sticky ul li a {
     color: white;
+  }
+  header.sticky ul li a:hover {
+    color: rgb(0, 0, 0);
   }
   @media only screen and (max-width:768px) {
 
@@ -175,7 +181,7 @@ header {
     .nav-menu {
       position: fixed;
       left: -100%;
-      top: 11rem;
+      top: 8rem;
       flex-direction: column;
       background: #CC8C18;
       width: 100%;
@@ -218,4 +224,19 @@ header {
       transform: translateY(-8px) rotate(-45deg);
     }
   }
-  
+.aa{
+  height: 50vh;
+  background-color: #376E6F;
+}
+.bb{
+  height: 50vh;
+  background-color: #ADADAD;
+}
+.cc{
+  height: 50vh;
+  background-color: #2F4454;
+}
+.dd{
+  height: 50vh;
+  background-color: #45A29E;
+}
