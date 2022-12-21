@@ -47,7 +47,7 @@ a {
     line-height: 30px;
     background: #FAF3E7;
     text-align: center;
-    color: #AC3B61;
+    color:  #2F5C8F;
   }
   
   .head img {
@@ -56,7 +56,8 @@ a {
 /* Header */
 header {
     margin-top: 48px;
-    background: #AC3B61;
+    background-color: #2F5C8F;
+    /* background: #AC3B61; */
     padding: 15px 0 15px 0;
     color: white;
   }
@@ -104,25 +105,24 @@ header {
   header ul li a:hover {
     color: #000;
   }
-  
   header .head_contact {
     position: relative;
   }
   
   header .head_contact i {
     position: absolute;
-    top: -29px;
-    left: -70%;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
+    top: -13px;
+    left: -60%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
     text-align: center;
     background: white;
-    color: #AC3B61;
+    color:  #2F5C8F;
     border-radius: 50%;
     transform: rotate(-45deg);
     border: 5px solid #ECE3D2;
-    font-size: 30px;
+    font-size: 25px;
   }
   
   header .sticky_logo {
@@ -142,7 +142,7 @@ header {
     z-index: 9999;
     position: fixed;
     width: 100%;
-    background: #AC3B61;
+    background:  #2F5C8F;
     transition: 0.5s;
     height: 12vh;
     transition: 0.5s;
@@ -159,18 +159,18 @@ header {
   @media only screen and (max-width:768px) {
 
     /*------------head------------*/
-    .header .head_contact,
+    .header.head_contact,
     .logo {
       display: none;
     }
   
     /*------------head------------*/
     header.sticky {
-      height: 8vh;
+      height: 18vh;
     }
   
     header.sticky .nav-menu {
-      background: #313538;
+      background: #2F5C8F;
     }
   
     .navbar {
@@ -181,18 +181,18 @@ header {
     .nav-menu {
       position: fixed;
       left: -100%;
-      top: 8rem;
+      top: 11rem;
       flex-direction: column;
-      background: #CC8C18;
+      background: #2F5C8F;
       width: 100%;
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
-      z-index: 99;
+      z-index: 999;
     }
   
     header.sticky .nav-menu {
-      top: 5rem;
+      top: 6rem;
     }
   
     header ul li a {
@@ -204,7 +204,7 @@ header {
     }
   
     header li {
-      margin: 2.5rem 0;
+      margin: 2.5rem 3rem;
     }
   
     .hamburger {
