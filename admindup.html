@@ -1,0 +1,645 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://www.sju.edu.in/images/favicon.ico" type="image/x-icon">
+<title>St Joseph's University,Bengaluru</title>
+<meta name="keywords" content="St Joseph's University,Bengaluru" >
+<meta name="description" content="St Joseph's University,Bengaluru">
+<link rel="canonical" href="https://www.sju.edu.in/">
+<link href="https://www.sju.edu.in/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+<link href="https://www.sju.edu.in/css/animate.css" type="text/css" rel="stylesheet"/>
+
+<link href="https://www.sju.edu.in/css/header-footer-style.css" type="text/css" rel="stylesheet"/>
+
+
+
+    <link rel="stylesheet" type="text/css" href="faq.css"> 
+    <!-- <link href="https://www.sju.edu.in/css/faq-style.css" type="text/css" rel="stylesheet"/> -->
+    <link href="https://www.sju.edu.in/css/faq-responsive.css" type="text/css" rel="stylesheet"/>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+<link href="https://www.sju.edu.in/css/toggle-menu.css" type="text/css" rel="stylesheet"/>
+
+<!--bootstrap icons-->
+<link href="https://www.sju.edu.in/css/bootstrap-icons.css" type="text/css" rel="stylesheet"/>
+<!--bootstrap icons-->
+<!--gallery popup-->
+<link href="https://www.sju.edu.in/css/lightgallery.css" type="text/css" rel="stylesheet"/>
+<!--gallery popup-->
+<!--div slider-->
+<link rel="stylesheet" href="https://www.sju.edu.in/css/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://www.sju.edu.in/css/owl.theme.default.min.css"/>
+<!--div slider-->
+<!--event calendar-->
+<link rel="stylesheet" href="https://www.sju.edu.in/css/zabuto_calendar.min.css" type="text/css" />
+<!--event calendar-->
+<!-- Google tag (gtag.js) -->
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=dElR4brDQr5r0K8YERbWubQcpryr5ZQHKtnpIyX6KaTNVKJnh3kYf2rKNPR8mZXZ945PWdtzsiWI8cixK7QUGQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly93d3cuc2p1LmVkdS5pbi9hbGwtY291cnNlcw"/><script async src="https://www.googletagmanager.com/gtag/js?id=G-K274P0Z0M7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K274P0Z0M7');
+</script>
+</head>
+
+
+
+<script>
+
+function fee_view(val) {
+	 
+$("#myModal").hide();
+
+var seperator= 'GET_FEE';
+	 $.ajax({			  
+		type: "POST",
+ 		url: "https://www.sju.edu.in/php/ajax/ajax_master.php",
+   		data: 'val='+val+'&seperator='+seperator,
+  		success: function(msg){	 	
+		$("#myModal").show();
+		$("#div_course_fee").html(msg);
+		},
+		error: function(){
+			alert('Server Busy');
+		}
+ 	   });	
+	
+	return false
+				
+	   
+}
+</script><style>
+
+.btn-closeee {
+    color: #fff;
+    background-color: #8d958f;
+    border-color: #8d958f;
+}
+.btn-closeee:hover {
+    color: #fff;
+    background-color: #8d958f;
+    border-color: #8d958f;
+}
+</style>
+
+
+
+<section id="comon-content-inner-banner">
+	 <img src="https://www.sju.edu.in/images/content-inner-banner.jpg" class="img-fluid" alt="inner banner"> 
+	<div class="comn-brd-heddings_3">
+        <div class="comn-brd-heddings">
+            <div class="cnt-hd-inn">
+                <h2> Hostel </h2>
+            </div>
+            <div class="clearfix"></div>
+            <div id="brd-crmpp">
+                <ul class="no-pad">
+                    <!-- <li> <a href="https://www.sju.edu.in/"> Home </a> <i class="bi bi-chevron-double-right"></i> </li> -->
+                    <li> <a href="#"> Main Page </a> </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+</section>
+
+<section id="contnt-pge-contents">
+	<div class="container">
+    	<div class="tabs">
+          <div class="tab-button-outer">
+            <ul id="tab-button">
+                        
+              <li><a href="#tab08"> Applications </a></li>
+                         
+              <li><a href="#tab02"> Mess Prefernces</a></li> 
+                         </ul>
+          </div>
+          <div class="tab-select-outer">
+            <select id="tab-select" class="mob-lstff">
+                           <option value="#tab08">Applications</option>
+                           <option value="#tab02">Mess Prefernces</option> 
+                          
+            </select>
+          </div>
+                  <div id="tab08" class="tab-contents">
+            <div id="content-tables_1">
+           
+                                                        
+                                
+                        <table id="card-table" class="table">
+                            <thead>
+                                <tr>
+                                    <td style="white-space:nowrap;"> SL. No. </td>
+                                    <td> Name </td>
+                                    <!-- <td> Batch Timing </td> -->
+                                    <!-- <td> Entrance Test </td> -->
+                                    <td>  Fees </td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                             	</tr>
+                            </thead>
+                            <tbody>
+                           
+                      
+                                                           <tr>
+                              	<!-- <td class="schll-name" colspan="7"> School of Business </td> -->
+                              </tr>
+                                                            <tr>
+                                    <td> 1</td>
+                                    <td>  Hostel Applications </td>
+                                    <!-- <td>Batch I: 7:00 AM to 11:00 AM<br /> -->
+<!-- Batch II: 12:00 PM to 5:00 PM<br /> -->
+<!-- Batch III: 5:00 PM to 9:00 PM<br /> -->
+</td>
+                                    <!-- <td style="text-align:center;">  No </td> -->
+                                    <td> <a href="#" class="btn btn-primary allyp-nw2" data-toggle="modal" data-target="#myModal" onclick="fee_view('1');" > Fees </a> </td> 
+                                    <td><center> <a href="" class="btn btn-primary allyp-nw2" > Details </a></center> </td> 
+                                     <td><center> <a href="" class="btn btn-success allyp-nw" target="_blank"> Apply </a></center>  </td> 
+                                  </tr>
+                                  
+                                                            <tr>
+                                    <td> 2</td>
+                                    <td>  Room Upgradtion  </td>
+                                    <!-- <td>7:00 AM to 11:00 AM<br /> -->
+</td>
+                                    <!-- <td style="text-align:center;">  No </td> -->
+                                    <td> <a href="#" class="btn btn-primary allyp-nw2" data-toggle="modal" data-target="#myModal" onclick="fee_view('2');" > Fees </a> </td>
+                                     <td><center> <a href="" class="btn btn-primary allyp-nw2" > Details </a></center> </td>
+                                    <td> <center><a href="" class="btn btn-success allyp-nw" target="_blank"> Apply </a> </center> </td>
+                                  </tr>
+                                  
+                                                            <tr>
+                                    <!-- <td> 3</td>
+                                    <td>  Bachelor of Commerce International Finance and Accounting (IFA) </td>
+                                    <td>Batch I: 7:00 AM to 11:00 AM<br />
+Batch II: 5:00 PM to 9:00 PM</td>
+                                    <td style="text-align:center;">  Yes </td>
+                                    <td> <a href="#" class="btn btn-primary allyp-nw2" data-toggle="modal" data-target="#myModal" onclick="fee_view('3');" > Fees </a> </td>
+                                     <td> <a href="https://www.sju.edu.in/courses/st-joseph-university/school-of-business/Department-of-Commerce/bcom-international-finance-and-accounting" class="btn btn-primary allyp-nw2" > Details </a> </td>
+                                    <td> <a href="https://sjc.linways.com/v4/adm-applicant/login" class="btn btn-success allyp-nw" target="_blank"> Apply </a>  </td>
+                                  </tr>
+                                  
+                                                            <tr>
+                                    <td> 4</td>
+                                    <td>  Bachelor of Business Administration </td>
+                                    <td>Batch I: 7:00 AM - 11:00 AM<br />
+Batch II: 5:00 PM - 9:00 PM<br />
+</td>
+                                    <td style="text-align:center;">  No </td>
+                                    <td> <a href="#" class="btn btn-primary allyp-nw2" data-toggle="modal" data-target="#myModal" onclick="fee_view('12');" > Fees </a> </td>
+                                     <td> <a href="https://www.sju.edu.in/courses/st-joseph-university/school-of-business/department-of-management/batchelor-of-business-administration" class="btn btn-primary allyp-nw2" > Details </a> </td>
+                                    <td> <a href="https://sjc.linways.com/v4/adm-applicant/login" class="btn btn-success allyp-nw" target="_blank"> Apply </a>  </td>
+                                  </tr>
+                                  
+                                                            <tr>
+                                    <td> 5</td>
+                                    <td>  Bachelor of Business Administration Strategic Finance </td>
+                                    <td> Batch I : 7:00 AM to 11:00 AM<br />
+ Batch II : 5:00 PM to 9:00 PM</td>
+                                    <td style="text-align:center;">  Yes </td>
+                                    <td> <a href="#" class="btn btn-primary allyp-nw2" data-toggle="modal" data-target="#myModal" onclick="fee_view('19');" > Fees </a> </td>
+                                     <td> <a href="https://www.sju.edu.in/courses/st-joseph-university/school-of-business/department-of-management/bba" class="btn btn-primary allyp-nw2" > Details </a> </td>
+                                    <td> <a href="https://sjc.linways.com/v4/adm-applicant/login" class="btn btn-success allyp-nw" target="_blank"> Apply </a>  </td>
+                                  </tr>
+                                 -->
+                                  
+                                                            	  
+                              </tbody>
+                        </table>
+                                            
+        </div>
+          </div>
+	  	           <div id="tab02" class="tab-contents">
+            <div id="content-tables_1">
+           
+                                                        
+                                
+                        <table id="card-table" class="table">
+                            <thead>
+                                <tr>
+                                    <td style="white-space:nowrap;"> SL. No. </td>
+                                    <td> Name </td>
+                                    <!-- <td> Batch Timing </td> -->
+                                    <!-- <td> Entrance Test </td> -->
+                                    <td> Fees </td> 
+                                    <td>&nbsp;</td>
+                                    <!-- <td>&nbsp;</td> -->
+                             	</tr>
+                            </thead>
+                            <tbody>
+                           
+                      
+
+                                  
+
+                              	<!-- <td class="schll-name" colspan="7"> School of Humanities </td> -->
+                              </tr>
+                                                            <tr>
+                                    <td> 1</td>
+                                    <td>  Food Prefernces </td>
+                                    <!-- <td>9:00 AM to 4:00 PM</td> -->
+                                    <!-- <td style="text-align:center;">  Yes </td> -->
+                                    <td> <center><a href="#" class="btn btn-primary allyp-nw2" data-toggle="modal" data-target="#myModal" onclick="fee_view('65');" > Fees </a></center> </td>
+                                     <!-- <td> <a href="" class="btn btn-primary allyp-nw2" > Details </a> </td> -->
+                                    <td><center> <a href="" class="btn btn-success allyp-nw" target="_blank"> Apply </a> </center> </td>
+                                  </tr>
+                                  
+                                                            <!-- <tr>
+                                    <td> 2</td>
+                                    <td>  Master of Arts (MA) in Political Science </td>
+                                    <td>7:00 AM to 2:00 PM</td>
+                                    <td style="text-align:center;">  No </td>
+                                    <td> <a href="#" class="btn btn-primary allyp-nw2" data-toggle="modal" data-target="#myModal" onclick="fee_view('63');" > Fees </a> </td>
+                                     <td> <a href="https://www.sju.edu.in/courses/st-joseph-university/school-of-humanities/political-science/master-of-arts-in-political-science" class="btn btn-primary allyp-nw2" > Details </a> </td>
+                                    <td> <a href="https://sjc.linways.com/v4/adm-applicant/login" class="btn btn-success allyp-nw" target="_blank"> Apply </a>  </td>
+                                  </tr>
+                                  
+                                                            <tr>
+                                    <td> 3</td>
+                                    <td>  Master of Science (MSc) in Counselling Psychology </td>
+                                    <td>7:00 AM to 2:00 PM</td>
+                                    <td style="text-align:center;">  No </td>
+                                    <td> <a href="#" class="btn btn-primary allyp-nw2" data-toggle="modal" data-target="#myModal" onclick="fee_view('78');" > Fees </a> </td>
+                                     <td> <a href="https://www.sju.edu.in/courses/st-joseph-university/school-of-humanities/psychology-and-counselling/master-of-science-in-counselling-psychology" class="btn btn-primary allyp-nw2" > Details </a> </td>
+                                    <td> <a href="https://sjc.linways.com/v4/adm-applicant/login" class="btn btn-success allyp-nw" target="_blank"> Apply </a>  </td>
+                                  </tr> -->
+                                  
+        
+       
+                                  
+                                                            	  
+                              </tbody>
+                        </table>
+                                            
+        </div>
+          </div>
+	  	          
+          
+        
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<script src="https://www.sju.edu.in/js/jquery.js"></script> 
+<script src="https://www.sju.edu.in/js/bootstrap.min.js"></script>
+<script src="https://www.sju.edu.in/js/jquery.newstape.js"></script>
+<script>
+    $(function() {
+        $('.newstape').newstape();
+    });
+</script>
+
+
+<!--Event Calendar-->
+<!--common scripts--> 
+<script src="https://www.sju.edu.in/js/common.js"></script> 
+<!--common scripts--> 
+<script src="https://www.sju.edu.in/js/wow.min.js"></script> 
+<script src="https://www.sju.edu.in/js/lazy-load.js"></script>
+<!--common scripts--> 
+<!--counder-->
+<script src="https://www.sju.edu.in/js/jquery-plugin-collection.js"></script> 
+<!--counder-->
+<!--slim scroll-->
+<!--slim scroll-->
+
+<!--gallery popup-->
+
+<script src="https://www.sju.edu.in/js/lightgallery-all.min.js"></script> 
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#lightgallery').lightGallery();
+	});
+</script>
+
+<!--gallery popup-->   
+<!--div slider--> 
+<script src="https://www.sju.edu.in/js/owl.carousel.js"></script>
+<!--div slider--> 
+<!--side menu -->
+<script src="https://www.sju.edu.in/js/side-menu.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$("#sidebar").mCustomScrollbar({
+			theme: "minimal"
+		});
+
+	$('#dismiss, .overlay').on('click', function () {
+		$('#sidebar').removeClass('active');
+			$('.overlay').removeClass('active');
+	});
+
+	$('#sidebarCollapse').on('click', function () {
+		$('#sidebar').addClass('active');
+			$('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+</script>
+   
+<!--side menu -->
+
+<!--sticky menu bar-->
+<script data-nv-seq="34">
+    jQuery(document).ready(function(){
+      var cmsHomeHeader = jQuery("#header_container").height();
+      //var menu_item_height = jQuery("#header_container").height();
+      jQuery(".cms-home .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".catalog-product-view .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".top-blank.myAccount_tb").css("margin-top",cmsHomeHeader);
+      jQuery(".cms-page-view .top-blank").css("margin-top",cmsHomeHeader);
+      //jQuery(".tagalys-search-index-index .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".customer-account-referralservice .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".ordertracking-index-index .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".dynamicsitemap-index-index .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".customer-account-create .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".customer-account-login .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".reviews-index-index .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".checkout-onepage-failure .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".checkout-onepage-success .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".cms-index-noroute .top-blank").css("margin-top",cmsHomeHeader);
+      jQuery(".ordertracking-index-view .top-blank").css("margin-top",cmsHomeHeader);
+      //jQuery(".tagalys-mpage-index-index .top-blank").css("margin-top",cmsHomeHeader);
+        jQuery(".mega_menu_").on("mouseenter", "ul li a.parent_", function(){
+            jQuery(".subMenu").removeClass("active"); 
+            jQuery(".parent_").removeClass("active");
+            jQuery(this).parent().children(".subMenu").addClass("active");            
+            jQuery(this).parent().children(".parent_").addClass("active");            
+        });        
+        jQuery(".mega_menu_").mouseleave(function() {
+            jQuery(".subMenu").removeClass("active");
+             jQuery(".parent_").removeClass("active");
+        });
+        
+        //data passing in GTM
+        jQuery(".mega_menu_ a").click(function(){
+            let dataMenu = jQuery(this).data("menu");
+            console.log(dataMenu);
+            dataLayer.push({
+                'event': "dataMenu",
+                'menuname': dataMenu                      
+              });
+        }); 
+
+        //for collection menu
+        let currentHeight = jQuery(".right_arrow .col_item.active").outerHeight();
+        let currentWidth = jQuery(".right_arrow .col_item.active").width();
+        let leftPos = jQuery(".right_arrow .col_item.active").position();
+        let topPos = jQuery(".right_arrow .col_item.active").position();
+        jQuery(".traveller_").css({
+            "left":leftPos.left + (currentWidth - 2),
+            "height":currentHeight,
+            "top":(topPos.top)  
+        });
+
+        jQuery(".subMenu").on("mouseenter", ".all_collection_item .item .col_item", function(){
+          let data_value =jQuery(this).attr("data-colection");
+          jQuery(".all_collection_item .item .col_item").removeClass("active");
+          jQuery(".collection_children").removeClass("active");
+          jQuery(this).addClass("active");
+          jQuery("#"+data_value).addClass("active");
+          
+          let leftPosition = jQuery(this).position();
+              let height = jQuery(this).outerHeight();
+              let width = jQuery(this).width();
+              let topPos = jQuery(this).position();
+              jQuery(".traveller_").css({
+                "left":leftPosition.left + (width - 2),
+                  "height":height,
+                  "top":(topPos.top)
+              })
+
+        }); 
+    });
+</script> 
+<script data-nv-seq="39">			
+	// Hide Header on on scroll down
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = jQuery('#header_container').outerHeight();
+	
+	jQuery(window).scroll(function(event){
+		didScroll = true;
+	});
+	
+	setInterval(function() {
+		if (didScroll) {
+			hasScrolled();
+			didScroll = false;
+		}
+	}, 250);
+	
+	function hasScrolled() {
+		var st = jQuery(this).scrollTop();
+	
+		// Make sure they scroll more than delta
+		if(Math.abs(lastScrollTop - st) <= delta)
+			return;
+		if (st > lastScrollTop && st > navbarHeight){
+			// Scroll Down
+			jQuery('#header_container').css("top", "-274px");
+		} else {
+			// Scroll Up
+			if(st + jQuery(window).height() < jQuery(document).height()) {
+				jQuery('#header_container').css("top", "0px", );
+
+			}
+		}
+		lastScrollTop = st;
+	}
+</script>
+<!--sticky menu bar-->
+
+<!--School - department side tab-->
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<!--School - department side tab-->
+<!--slim scroll for school- department tab-->
+
+
+
+
+<!--slim scroll for school- department tab-->
+        
+    
+
+
+<script type="text/javascript" src="https://www.sju.edu.in/js/marquee.js"></script>
+
+
+		<script>
+			$(function (){
+
+				$('.simple-marquee-container').SimpleMarquee();
+				
+			});
+
+		</script>
+
+
+
+
+<!--event calendar-->
+<script type="text/javascript" src="https://www.sju.edu.in/js/zabuto_calendar.min.js"></script>
+
+           
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+
+
+$(document).ready(function(){
+	var dept_id  = $('#dept_id').val(); //alert(dept_id);
+		$("#caldr-list").zabuto_calendar({
+			cell_border: true,
+			nav_icon: {
+                        prev: '<i class="bi bi-arrow-left"></i>',
+                        next: '<i class="bi bi-arrow-right"></i>'
+                    },
+			
+			ajax: { 
+				 url: "https://www.sju.edu.in/php/ajax/ajax_calendar_data.php?dept_id="+dept_id
+				
+				
+			},
+			action: function () {
+				var date = $('#' + this.id).data('date'); 
+				
+				getEvents(date);
+				//alert('You clicked date: ' + date);
+			},
+			today: true
+		
+		});
+	});
+
+
+
+
+function getEvents(dt){ 
+	var dept_idss  	= $('#dept_id').val();
+	var div_name  	= $('#div_name').val();
+	var cam_name  	= $('#cam_name').val();
+	
+	var seperator = 'GET_EVENT_CALENDAR';
+	$.ajax({
+		type: "POST",
+ 		url: "https://www.sju.edu.in/php/ajax/ajax_master.php",
+   		data: 'dt='+dt+'&seperator='+seperator+'&dept_idss='+dept_idss+'&div_name='+div_name+'&cam_name='+cam_name,
+  		cache: false,
+  		success: function(msg){  // alert(msg);
+			//var mss=msg.split('~');
+			$('#event-details').html(msg); 
+		},
+		error: function(){
+			alert('Server Busy');
+		}
+ 	});	
+	
+	
+	
+}
+
+</script>
+<!--event calendar-->
+
+
+
+
+</body>
+</html>
+
+
+<script src="https://www.sju.edu.in/js/stacktable.js" type="text/javascript"></script>
+
+<script>
+  $(document).on('click', '#run', function(e) {
+    e.preventDefault();
+    $('#simple-example-table').stacktable();
+    $(this).replaceWith('<span>ran - resize your window to see the effect</span>');
+  });
+  $('#responsive-example-table').stacktable({myClass:'your-custom-class'});
+  $('#card-table').cardtable();
+  $('#agenda-example').stackcolumns();
+</script>
+ <script>
+		$(function() {
+  var $tabButtonItem = $('#tab-button li'),
+      $tabSelect = $('#tab-select'),
+      $tabContents = $('.tab-contents'),
+      activeClass = 'is-active';
+
+  $tabButtonItem.first().addClass(activeClass);
+  $tabContents.not(':first').hide();
+
+  $tabButtonItem.find('a').on('click', function(e) {
+    var target = $(this).attr('href');
+
+    $tabButtonItem.removeClass(activeClass);
+    $(this).parent().addClass(activeClass);
+    $tabSelect.val(target);
+    $tabContents.hide();
+    $(target).show();
+    e.preventDefault();
+  });
+
+  $tabSelect.on('change', function() {
+    var target = $(this).val(),
+        targetSelectNum = $(this).prop('selectedIndex');
+
+    $tabButtonItem.removeClass(activeClass);
+    $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+    $tabContents.hide();
+    $(target).show();
+  });
+});
+		</script>
+
+ <script>
+ 	function getSubmitKey(){
+		newsSearch.submit();
+	}
+	
+	
+ </script>
